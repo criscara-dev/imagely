@@ -8,7 +8,7 @@ const images = props.images.map( ({src,id, photographer}) => {
 });
     return(
       <div>
-        ImageList {images}
+        {images}
       </div>
     )
   }

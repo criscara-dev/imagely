@@ -1,9 +1,7 @@
 import React from 'react';
 import pexels from '../api/pexels';
-
 import ImageList from './ImageList';
 import SearchBar from './SearchBar';
-
 
 export class App extends React.Component {
    state = { images:[] };
@@ -17,7 +15,6 @@ export class App extends React.Component {
     this.setState({images: response.data.photos });
 }
 
-
   render(){
     const myName = { fullName: 'Cristian Caratti App'};
     return(
@@ -25,13 +22,12 @@ export class App extends React.Component {
         <div className="ui segment">
         <h1 className="ui header">{myName.fullName}</h1>
         <SearchBar runSubmit={this.onSearchSubmit}/>
-    // Found: {this.state.images.length} photos
+    {/* Found: {this.state.images.length} photos */}
         <ImageList images={this.state.images} />
         </div>
       </div>
     )
   }
 }
-
 
 export default App;
