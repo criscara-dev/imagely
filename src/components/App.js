@@ -7,11 +7,9 @@ export class App extends React.Component {
    state = { images:[] };
 
  onSearchSubmit = async term => {
-  //console.log(term)
   const response = await pexels.get('/v1/search',{
     params: {query: term }
   });
-    // console.log(response.data.photos);
     this.setState({images: response.data.photos });
 }
 
@@ -22,7 +20,6 @@ export class App extends React.Component {
         <div className="ui segment">
         <h1 className="ui header">{myName.name}</h1>
         <SearchBar runSubmit={this.onSearchSubmit}/>
-    {/* Found: {this.state.images.length} photos */}
         <ImageList images={this.state.images} />
         </div>
       </div>
