@@ -2,7 +2,7 @@
 
 # travel-site
 
-[![imagely](/app/assets/images/imagely-pic.png)](https://criscarart.github.io/imagely/)
+[![imagely](/src/imagely-pic.png)](https://criscarart.github.io/imagely/)
 
 ## Live app
 
