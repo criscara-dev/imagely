@@ -1,7 +1,5 @@
 # Wep App:
 
-# travel-site
-
 [![imagely](/src/imagely-pic.png)](https://criscarart.github.io/imagely/)
 
 ## Live app
