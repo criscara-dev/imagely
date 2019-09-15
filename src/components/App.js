@@ -16,11 +16,11 @@ export class App extends React.Component {
 }
 
   render(){
-    const myName = { fullName: 'Cristian Caratti App'};
+    const myName = { name: 'Imagely'};
     return(
       <div className="ui container" style={{textAlign:'center'}}>
         <div className="ui segment">
-        <h1 className="ui header">{myName.fullName}</h1>
+        <h1 className="ui header">{myName.name}</h1>
         <SearchBar runSubmit={this.onSearchSubmit}/>
     {/* Found: {this.state.images.length} photos */}
         <ImageList images={this.state.images} />
